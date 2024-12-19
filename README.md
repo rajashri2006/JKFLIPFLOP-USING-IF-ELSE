@@ -34,12 +34,22 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
 
 **Procedure**
 
-/* write all the steps invloved */
+Inputs:
+
+J and K are the two inputs.
+Q is the current state (output) of the flip-flop.
+Q_next is the next state (output after processing the inputs).
+A clock signal triggers the flip-flop.
+Behavior:
+
+If J = 0 and K = 0: No change in output (state remains the same).
+If J = 0 and K = 1: Reset the output (Q_next = 0).
+If J = 1 and K = 0: Set the output (Q_next = 1).
+If J = 1 and K = 1: Toggle the output (Q_next = ~Q).
 
 **PROGRAM**
 
-/* Program for flipflops and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
-*/
+DEVELOPED BY:RAJASHRI I, Register Number:24900207
 ![DE ex7 code](https://github.com/user-attachments/assets/a7614281-6b4e-4d04-9b2e-46eb3f5bb704)
 
 
